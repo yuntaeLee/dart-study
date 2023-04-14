@@ -10,4 +10,15 @@ void main() {
     {'name': 'yoon', 'xp': 199995.55},
     {'name': 'yoon', 'xp': 199995.55},
   ];
+
+  Map<String, dynamic> book = {
+    'title': 'Misson Mangal',
+    'author': 'Kuber Singh',
+    'page': 233
+  };
+
+  for (MapEntry book in book.entries) {
+    print("Key is ${book.key}, value ${book.value}");
+  }
+  book.forEach((key, value) => print("Key is $key and value is $value"));
 }
