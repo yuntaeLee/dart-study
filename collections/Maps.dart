@@ -11,6 +11,7 @@ void main() {
     {'name': 'yoon', 'xp': 199995.55},
   ];
 
+  // Loop
   Map<String, dynamic> book = {
     'title': 'Misson Mangal',
     'author': 'Kuber Singh',
@@ -20,5 +21,16 @@ void main() {
   for (MapEntry book in book.entries) {
     print("Key is ${book.key}, value ${book.value}");
   }
+
   book.forEach((key, value) => print("Key is $key and value is $value"));
+
+  // Remove Where
+  Map<String, double> mathMarks = {
+    "ram": 30,
+    "mark": 32,
+    "harry": 88,
+    "john": 15,
+  };
+  mathMarks.removeWhere((key, value) => value < 32);
+  print(mathMarks);
 }
