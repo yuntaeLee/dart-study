@@ -1,4 +1,4 @@
 void main() {
   final String name = 'yoon';
-  name = 'newName';
+  name = 'newName'; // ERROR
 }
